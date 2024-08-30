@@ -1,0 +1,129 @@
+DROP DATABASE
+CREATE DATABASE
+You are now connected to database "test_totesys" as user "duo".
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+INSERT 0 3
+INSERT 0 3
+INSERT 0 3
+INSERT 0 3
+INSERT 0 3
+INSERT 0 3
+INSERT 0 3
+INSERT 0 3
+INSERT 0 3
+INSERT 0 3
+INSERT 0 3
+ sales_order_id |     created_at      |    last_updated     | design_id | staff_id | counterparty_id | units_sold | unit_price | currency_id | agreed_delivery_date | agreed_payment_date | agreed_delivery_location_id 
+----------------+---------------------+---------------------+-----------+----------+-----------------+------------+------------+-------------+----------------------+---------------------+-----------------------------
+              1 | 2023-08-10 09:15:00 | 2023-08-10 09:15:00 |       101 |       12 |              45 |        100 |      25.50 |           1 | 2023-09-15           | 2023-09-01          |                           3
+              2 | 2023-08-11 11:30:00 | 2023-08-11 11:30:00 |       102 |       15 |              50 |        250 |      30.00 |           2 | 2023-09-20           | 2023-09-05          |                           4
+              3 | 2023-08-12 14:45:00 | 2023-08-12 14:45:00 |       103 |       18 |              60 |        500 |      40.75 |           3 | 2023-09-25           | 2023-09-10          |                           5
+(3 rows)
+
+ design_id |     created_at      |    last_updated     |     design_name      |     file_location     |          file_name          
+-----------+---------------------+---------------------+----------------------+-----------------------+-----------------------------
+         1 | 2023-08-10 10:00:00 | 2023-08-10 10:00:00 | Modern Living Room   | /designs/living_room/ | modern_living_room_v1.png
+         2 | 2023-08-11 11:30:00 | 2023-08-11 11:30:00 | Contemporary Kitchen | /designs/kitchen/     | contemporary_kitchen_v2.jpg
+         3 | 2023-08-12 14:45:00 | 2023-08-12 14:45:00 | Classic Bedroom      | /designs/bedroom/     | classic_bedroom_v3.svg
+(3 rows)
+
+ currency_id | currency_code |     created_at      |    last_updated     
+-------------+---------------+---------------------+---------------------
+           1 | USD           | 2023-08-10 09:00:00 | 2023-08-10 09:00:00
+           2 | EUR           | 2023-08-11 10:30:00 | 2023-08-11 10:30:00
+           3 | GBP           | 2023-08-12 12:00:00 | 2023-08-12 12:00:00
+(3 rows)
+
+ staff_id | first_name | last_name | department_id |       email_address        |     created_at      |    last_updated     
+----------+------------+-----------+---------------+----------------------------+---------------------+---------------------
+        1 | John       | Doe       |             1 | john.doe@example.com       | 2023-08-10 08:00:00 | 2023-08-10 08:00:00
+        2 | Jane       | Smith     |             2 | jane.smith@example.com     | 2023-08-11 09:15:00 | 2023-08-11 09:15:00
+        3 | Robert     | Johnson   |             3 | robert.johnson@example.com | 2023-08-12 10:30:00 | 2023-08-12 10:30:00
+(3 rows)
+
+ counterparty_id | counterparty_legal_name | legal_address_id | commercial_contact | delivery_contact |     created_at      |    last_updated     
+-----------------+-------------------------+------------------+--------------------+------------------+---------------------+---------------------
+               1 | Global Corp Ltd         |              101 | Alice Brown        | Bob White        | 2023-08-10 10:00:00 | 2023-08-10 10:00:00
+               2 | Tech Innovators Inc     |              102 | Charlie Green      | David Black      | 2023-08-11 11:15:00 | 2023-08-11 11:15:00
+               3 | Creative Solutions LLC  |              103 | Eve Blue           | Frank Yellow     | 2023-08-12 12:30:00 | 2023-08-12 12:30:00
+(3 rows)
+
+ address_id | address_line_1 | address_line_2 | district  |    city    | postal_code | country |    phone     |     created_at      |    last_updated     
+------------+----------------+----------------+-----------+------------+-------------+---------+--------------+---------------------+---------------------
+          1 | 123 Main St    | Apt 4B         | Downtown  | Manchester | M1 1AA      | UK      | 01234 567890 | 2023-08-10 08:00:00 | 2023-08-10 08:00:00
+          2 | 456 Elm St     |                | Northside | Leeds      | LS1 2BB     | UK      | 09876 543210 | 2023-08-11 09:15:00 | 2023-08-11 09:15:00
+          3 | 789 Oak St     | Suite 300      |           | Liverpool  | L3 4CC      | UK      | 01122 334455 | 2023-08-12 10:30:00 | 2023-08-12 10:30:00
+(3 rows)
+
+ purchase_order_id |     created_at      |    last_updated     | staff_id | counterparty_id | item_code | item_quantity | item_unit_price | currency_id | agreed_delivery_date | agreed_payment_date | agreed_delivery_location_id 
+-------------------+---------------------+---------------------+----------+-----------------+-----------+---------------+-----------------+-------------+----------------------+---------------------+-----------------------------
+                 1 | 2023-08-10 08:00:00 | 2023-08-10 08:00:00 |       12 |              45 | ITEM001   |           100 |           15.75 |           1 | 2023-09-15           | 2023-09-01          |                           3
+                 2 | 2023-08-11 09:15:00 | 2023-08-11 09:15:00 |       15 |              50 | ITEM002   |           200 |           22.50 |           2 | 2023-09-20           | 2023-09-05          |                           4
+                 3 | 2023-08-12 10:30:00 | 2023-08-12 10:30:00 |       18 |              60 | ITEM003   |           150 |           30.00 |           3 | 2023-09-25           | 2023-09-10          |                           5
+(3 rows)
+
+ department_id | department_name |   location    |    manager    |     created_at      |    last_updated     
+---------------+-----------------+---------------+---------------+---------------------+---------------------
+             1 | Human Resources | New York      | Alice Johnson | 2023-08-10 08:00:00 | 2023-08-10 08:00:00
+             2 | IT Support      | San Francisco | Bob Smith     | 2023-08-11 09:15:00 | 2023-08-11 09:15:00
+             3 | Marketing       | Chicago       | Carol Davis   | 2023-08-12 10:30:00 | 2023-08-12 10:30:00
+(3 rows)
+
+ payment_type_id | payment_type_name |     created_at      |    last_updated     
+-----------------+-------------------+---------------------+---------------------
+               1 | Credit Card       | 2023-08-10 08:00:00 | 2023-08-10 08:00:00
+               2 | Bank Transfer     | 2023-08-11 09:15:00 | 2023-08-11 09:15:00
+               3 | PayPal            | 2023-08-12 10:30:00 | 2023-08-12 10:30:00
+(3 rows)
+
+ payment_id |     created_at      |    last_updated     | transaction_id | counterparty_id | payment_amount | currency_id | payment_type_id | paid | payment_date | company_ac_number | counterparty_ac_number 
+------------+---------------------+---------------------+----------------+-----------------+----------------+-------------+-----------------+------+--------------+-------------------+------------------------
+          1 | 2023-08-10 08:00:00 | 2023-08-10 08:00:00 |              1 |              45 |      552548.62 |           1 |               3 | t    | 2023-09-04   |          67305075 |               31622269
+          2 | 2023-08-11 09:15:00 | 2023-08-11 09:15:00 |              2 |              50 |      205952.22 |           2 |               1 | f    | 2023-09-05   |          81718079 |               47839086
+          3 | 2023-08-12 10:30:00 | 2023-08-12 10:30:00 |              3 |              60 |       57067.20 |           3 |               2 | t    | 2023-09-10   |          66213052 |               91659548
+(3 rows)
+
+ transaction_id | transaction_type | sales_order_id | purchase_order_id |     created_at      |    last_updated     
+----------------+------------------+----------------+-------------------+---------------------+---------------------
+              1 | Sale             |              1 |                   | 2023-08-10 08:00:00 | 2023-08-10 08:00:00
+              2 | Purchase         |                |               101 | 2023-08-11 09:15:00 | 2023-08-11 09:15:00
+              3 | Refund           |              2 |                   | 2023-08-12 10:30:00 | 2023-08-12 10:30:00
+(3 rows)
+
